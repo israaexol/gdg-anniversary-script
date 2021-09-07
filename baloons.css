@@ -1,0 +1,109 @@
+.baloons img {
+    display: inline-block;
+    position: absolute;
+  }
+  
+  @keyframes baloons {
+    0% {top: -1000px;}
+    100% {top: 1000px}
+  }
+  
+  .baloons img:nth-child(even) {
+    left: -10%;
+  }
+  
+  .baloons img:nth-child(odd) {
+    right: -10%;
+  }
+  
+  .baloons img:nth-child(3n + 0) {
+    left: 30%;
+  }
+  
+  .one {
+    animation-name: one;
+    animation-duration: 8s;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes one {
+    0% {top: 1000px;}
+    100% {top: -1000px}
+  }
+  
+  .two {
+    animation-name: two;
+    animation-duration: 8s;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes two {
+    0% {top: 1400px;}
+    100% {top: -1400px}
+  }
+  
+  .three {
+    animation-name: three;
+    animation-duration: 8s;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes three {
+    0% {top: 800px;}
+    100% {top: -800px}
+  }
+  
+  .four {
+    animation-name: four;
+    animation-duration: 8s;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes four {
+    0% {top: 1800px;}
+    100% {top: -1800px}
+  }
+
+  .five {
+    animation-name: five;
+    animation-duration: 10s;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes five {
+    0% {top: 2600px;}
+    100% {top: -2600px}
+  }
+
+  .six {
+    animation-name: six;
+    animation-duration: 10s;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes six {
+    0% {top: 2400px;}
+    100% {top: -2400px}
+  }
+
+  .seven {
+    animation-name: seven;
+    animation-duration: 8s;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes seven {
+    0% {top: 1600px;}
+    100% {top: -1600px}
+  }
+
+  .eight {
+    animation-name: eight;
+    animation-duration: 10s;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes eight {
+    0% {top: 2000px;}
+    100% {top: -2000px}
+  }

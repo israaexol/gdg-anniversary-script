@@ -1,0 +1,204 @@
+.letters {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -63%);
+}
+
+.aMin {
+    display: flex;
+    text-align: left;
+    justify-content:flex-start;
+    position: relative;
+}
+
+.a {
+  color: #0f9d58;
+  font-size: 100px;
+  opacity: 0;
+  font-family: "Product Sans Regular";
+  left: 50%;
+  right: 50%;
+  transform: translate(60%, 0%);
+  animation-name: letterA;
+  animation-duration: 4s;
+  animation-delay: 4s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes letterA {
+  0% {opacity: 0;}
+  90% {opacity: 1;}
+  100% {opacity: 1;}
+}
+
+.letterG {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+    padding: 7px;
+}
+
+.G1 {
+  text-align: center;
+  padding: 0px 20px;
+  font-family: "Product Sans Regular";
+  color: #4285f4;
+  font-size: 140px;
+}
+
+.letterD {
+  display: block;
+  text-align: left;
+  justify-content:flex-start;
+  position: absolute;
+  animation-name: letterD;
+  animation-duration: 2s;
+  animation-delay: 3s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+}
+
+.D {
+  font-family: "Product Sans Regular";
+  transform: translate(150%, -323%);
+  color: #db4437;
+  font-size: 140px;
+
+}
+
+@keyframes letterD {
+  0% {opacity: 1;}
+  100% {
+    transform: translate(-127%, 40%);
+  }
+}
+
+.ofDiv {
+  display: block;
+  text-align: left;
+  justify-content:flex-start;
+  position: absolute;
+}
+
+.of {
+  color: #0f9d58;
+  opacity: 0;
+  font-size: 100px;
+  font-family: "Product Sans Regular";
+  padding-top: 30px;
+  transform: translate(30%, -178%);
+  animation-name: of;
+  animation-delay: 4s;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes of {
+  0% {opacity: 0;}
+  90% {opacity: 1;}
+  100% {opacity: 1;}
+
+}
+
+.lettersG2 {
+  display: block;
+  text-align: left;
+  justify-content:flex-start;
+  position: absolute;
+}
+
+.G2 {
+  color: #f4b400;
+  font-size: 140px;
+  font-family: "Product Sans Regular";
+  transform: translate(224%, -324%);
+  animation-name: letterG2;
+  animation-duration: 2s;
+  animation-delay: 3s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+}
+
+@keyframes letterG2 {
+  0% { opacity: 1; }
+  100% { transform: translate(20%, -98%);}
+}
+
+.decade {
+  display: block;
+  text-align: left;
+  justify-content:flex-start;
+  position: absolute;
+}
+
+.ecade {
+  font-family: "Product Sans Regular";
+  transform: translate(32%, -240%);
+  color: #db4437;
+  opacity: 0;
+  font-size: 140px;
+  animation-name: decade;
+  animation-duration: 2s;
+  animation-delay: 5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes decade {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+.glorious {
+  display: block;
+  text-align: left;
+  justify-content:flex-start;
+  position: absolute;
+}
+
+.lorious {
+  font-family: "Product Sans Regular";
+  transform: translate(34%, -324%);
+  color: #4285f4;
+  opacity: 0;
+  font-size: 140px;
+  animation-name: decade;
+  animation-duration: 2s;
+  animation-delay: 5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes glorious {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+.goodness {
+  display: block;
+  text-align: left;
+  justify-content:flex-start;
+  position: absolute;
+}
+
+.oodness {
+  font-family: "Product Sans Regular";
+  transform: translate(26%, -100%);
+  color: #f4b400;
+  opacity: 0;
+  font-size: 140px;
+  animation-name: goodness;
+  animation-duration: 2s;
+  animation-delay: 5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes goodness {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+

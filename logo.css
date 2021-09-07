@@ -1,0 +1,115 @@
+.logo {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -10%);
+    display: flex;
+    justify-content: center;
+    animation-name: logo;
+    animation-duration: 2s;
+}
+
+@keyframes logo {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.logo1 {
+    padding: 0px 10px;
+    animation-name: logo1;
+    animation-duration: 2s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes logo1 {
+    0% { opacity: 1; }
+    100% { transform: translate(-150%, 0); }
+}
+
+.logo2 {
+    padding: 0px 10px;
+    animation-name: logo2;
+    animation-duration: 2s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes logo2 {
+    0% { opacity: 1; }
+    100% { transform: translate(150%, 0); }
+}
+
+.gdgalg {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -20%);
+    display: flex;
+    opacity: 0;
+    justify-content: center;
+    animation-name: gdgalgiers;
+    animation-duration: 2s;
+    animation-delay: 5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+}
+
+@keyframes gdgalgiers {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.gdgalgiers {
+    font-family: "Product Sans Bold";
+    font-size: 90px;
+}
+
+.hat {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-100%, -500%);
+    animation-name: birthdayhat;
+    animation-duration: 4s;
+    animation-delay: 5s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+
+@keyframes birthdayhat {
+    0% { transform: translate(-100%, -500%); }
+    100% { transform: translate(-100%, -62%); }
+}
+
+.bdayhat {
+    width: 60%;
+    height: 60%;
+    transform: rotate(20deg);
+}
+
+.hbday {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    opacity: 0;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -150%);
+    animation-name: hbday;
+    animation-duration: 2s;
+    animation-delay: 10s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in;
+}
+
+@keyframes hbday {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.happybday {
+    font-size: 80px;
+    font-family: "Product Sans Bold";
+}
