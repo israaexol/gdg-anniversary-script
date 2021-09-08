@@ -127,7 +127,7 @@
 
 @keyframes letterG2 {
   0% { opacity: 1; }
-  100% { transform: translate(20%, -98%);}
+  100% { transform: translate(23%, -98%);}
 }
 
 .decade {
@@ -139,7 +139,7 @@
 
 .ecade {
   font-family: "Product Sans Regular";
-  transform: translate(32%, -240%);
+  transform: translate(32%, -239%);
   color: #db4437;
   opacity: 0;
   font-size: 140px;
@@ -163,7 +163,7 @@
 
 .lorious {
   font-family: "Product Sans Regular";
-  transform: translate(34%, -324%);
+  transform: translate(34%, -323%);
   color: #4285f4;
   opacity: 0;
   font-size: 140px;
@@ -187,7 +187,7 @@
 
 .oodness {
   font-family: "Product Sans Regular";
-  transform: translate(26%, -100%);
+  transform: translate(26.5%, -98%);
   color: #f4b400;
   opacity: 0;
   font-size: 140px;
@@ -201,4 +201,3 @@
   0% {opacity: 0;}
   100% {opacity: 1;}
 }
-

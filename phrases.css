@@ -2,45 +2,63 @@
     transform: translate(25%,12%);
   }
   
-  .created {
-      display: flex;
-      text-align: left;
-      justify-content:flex-start;
-      position: relative;
-      animation-name: createdBy;
-      animation-duration: 3s;
-      animation-delay: 4s;
-      animation-fill-mode: forwards;
-      animation-timing-function: ease-in;
-  }
-  
-  @keyframes createdBy {
-    0% {opacity: 1;}
-    60% { transform: translate(600%, 0%); }
-    100% { transform: translate(700%, 0%); opacity: 0; }
-  }
-  
-  .createdBy {
-    color: #000;
-    font-size: 70px;
-    opacity: 1;
-    font-family: "Product Sans Regular";
-  }
-  
-  .letterAmaj {
+.created {
     display: flex;
     text-align: left;
     justify-content:flex-start;
     position: relative;
-  }
+    animation-name: createdBy;
+    animation-duration: 3s;
+    animation-delay: 4s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in;
+}
+
+@keyframes createdBy {
+  0% {opacity: 1;}
+  60% { transform: translate(600%, 0%); }
+  100% { transform: translate(700%, 0%); opacity: 0; }
+}
   
-  .aMaj {
-    color: #000;
-    font-size: 70px;
-    opacity: 1;
-    font-family: "Product Sans Regular";
-    transform: translate(0%, -90%);
-  }
+.createdBy {
+  color: #000;
+  font-size: 70px;
+  opacity: 1;
+  font-family: "Product Sans Regular";
+}
+
+.letterAmaj {
+  display: flex;
+  text-align: left;
+  justify-content:flex-start;
+  animation-name: letterA;
+  animation-duration: 17s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in;
+  position: relative;
+}
+
+@keyframes letterA {
+  0% { opacity: 1; }
+  10% { opacity: 1; }
+  20% { opacity: 1; }
+  30% { opacity: 1; }
+  40% { opacity: 1; }
+  50% { opacity: 1; }
+  60% { opacity: 1; }
+  70% { opacity: 1; }
+  80% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { opacity: 0 ;}
+}
+
+.aMaj {
+  color: #000;
+  font-size: 70px;
+  opacity: 1;
+  font-family: "Product Sans Regular";
+  transform: translate(0%, -90%);
+}
     
 .remarkableT {
     display: flex;
@@ -86,152 +104,140 @@
     transform: translate(0%, -1400%);
     animation-name: dedicatedTo;
     animation-duration: 14.6s;
-    animation-delay: 1s;
+    animation-delay: 2s;
     animation-fill-mode: forwards;
     animation-timing-function: ease;
   }
   
-  @keyframes dedicatedTo {
+@keyframes dedicatedTo {
+
+  0% {opacity: 1;}
+  40% { transform: translate(0%, -298%); opacity: 1;}
+  50% { transform: translate(0%, -298%); opacity: 1;}
+  60% { transform: translate(170%, -298%); opacity: 1; }
+  80% { transform: translate(250%, -298%); opacity: 1; }
+  100% { transform: translate(700%, -298%); opacity: 0; }
+
+}
   
-    0% {opacity: 1;}
-    40% { transform: translate(0%, -298%); opacity: 1;}
-    50% { transform: translate(0%, -298%); opacity: 1;}
-    60% { transform: translate(170%, -298%); opacity: 1; }
-    80% { transform: translate(250%, -298%); opacity: 1; }
-    100% { transform: translate(700%, -298%); opacity: 0; }
+.dedicatedTo {
+  color: #000;
+  font-size: 70px;
+  opacity: 1;
+  font-family: "Product Sans Regular";
+}
   
-  }
+.passionateC {
+  display: flex;
+  text-align: left;
+  justify-content:flex-start;
+  position: relative;
+  transform: translate(5%, 700%);
+  animation-name: passionateComm;
+  animation-duration: 15.5s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+}
   
-  .dedicatedTo {
-    color: #000;
-    font-size: 70px;
-    opacity: 1;
-    font-family: "Product Sans Regular";
-  }
+@keyframes passionateComm {
+
+  0% {opacity: 1;}
+  10% {transform: translate(5%, 0%); opacity: 1;}
+  30% { transform: translate(5%, -335%); opacity: 1;}
+  40% { transform: translate(5%, -335%); opacity: 1;}
+  50% { transform: translate(5%, -100%); opacity: 1; }
+  70% { transform: translate(5%, 200%); opacity: 1; }
+  80% { transform: translate(5%, 800%); opacity: 1;}
+  100% { transform: translate(5%, 900%); opacity: 0; }
+}
   
-  .passionateC {
-    display: flex;
-    text-align: left;
-    justify-content:flex-start;
-    position: relative;
-    transform: translate(5%, 700%);
-    /* transform: translate(9%, -335%); */
-    animation-name: passionateComm;
-    animation-duration: 14.5s;
-    animation-delay: 2.5s;
-    animation-fill-mode: forwards;
-    animation-timing-function: ease;
-  }
+.passionate {
+  color: #fff;
+  padding: 5px 10px;
+  background-color: #4285f4;
+  font-size: 70px;
+  opacity: 1;
+  font-family: "Product Sans Regular";
+}
+
+.community {
+  color: #000;
+  padding: 5px 10px;
+  font-size: 70px;
+  opacity: 1;
+  font-family: "Product Sans Regular";
+}
   
-  @keyframes passionateComm {
+.constructed {
+  display: flex;
+  text-align: left;
+  justify-content:flex-start;
+  position: relative;
+  transform: translate(0%, -1400%);
+  animation-name: thatConstructed;
+  animation-duration: 14.1s;
+  animation-delay: 7.8s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+}
   
-    0% {opacity: 1;}
-    10% {transform: translate(5%, 0%); opacity: 1;}
-    30% { transform: translate(5%, -335%); opacity: 1;}
-    40% { transform: translate(5%, -335%); opacity: 1;}
-    50% { transform: translate(5%, -100%); opacity: 1; }
-    70% { transform: translate(5%, 200%); opacity: 1; }
-    80% { transform: translate(5%, 800%); opacity: 1;}
-    100% { transform: translate(5%, 900%); opacity: 0; }
-  
-    /* 0% {opacity: 1;}
-    10% {transform: translate(9%, 0%); opacity: 1;}
-    40% { transform: translate(9%, -335%); opacity: 1;}
-    50% { transform: translate(9%, -335%); opacity: 1;}
-    60% { transform: translate(9%, 150%); opacity: 1; }
-    80% { transform: translate(9%, 300%); opacity: 1;}
-    90% { transform: translate(9%, 500%); opacity: 1;}
-    100% { transform: translate(9%, 700%); opacity: 0; } */
-  }
-  
-  .passionate {
-    color: #fff;
-    padding: 5px 10px;
-    background-color: #4285f4;
-    font-size: 70px;
-    opacity: 1;
-    font-family: "Product Sans Regular";
-  }
-  
-  .community {
-    color: #000;
-    padding: 5px 10px;
-    font-size: 70px;
-    opacity: 1;
-    font-family: "Product Sans Regular";
-  }
-  
-  .constructed {
-    display: flex;
-    text-align: left;
-    justify-content:flex-start;
-    position: relative;
-    transform: translate(0%, -1400%);
-    animation-name: thatConstructed;
-    animation-duration: 14.2s;
-    animation-delay: 6.3s;
-    animation-fill-mode: forwards;
-    animation-timing-function: ease;
-  }
-  
-  @keyframes thatConstructed {
-    0% {opacity: 1;}
-    34% { transform: translate(0%, -506%); opacity: 1;}
-    40% { transform: translate(0%, -506%); opacity: 1;}
-    50% { transform: translate(0%, -506%); opacity: 1;}
-    60% { transform: translate(170%, -506%); opacity: 1; }
-    80% { transform: translate(250%, -506%); opacity: 1; }
-    100% { transform: translate(700%, -506%); opacity: 0; }
-  }
-  
-  .thatConstructed {
-    color: #000;
-    font-size: 70px;
-    opacity: 1;
-    font-family: "Product Sans Regular";
-  }
-  
-  .memorableJ {
-    display: flex;
-    text-align: left;
-    justify-content:flex-start;
-    position: relative;
-    transform: translate(9%, 700%);
-    /* transform: translate(9%, -335%); */
-    animation-name: memJourney;
-    animation-duration: 14.2s;
-    animation-delay: 6.3s;
-    animation-fill-mode: forwards;
-    animation-timing-function: ease-out;
-  }
-  
-  @keyframes memJourney {
-    0% {opacity: 1;}
-    10% {transform: translate(5%, 0%); opacity: 1;}
-    30% { transform: translate(5%, -530%); opacity: 1;}
-    40% { transform: translate(5%, -530%); opacity: 1;}
-    50% { transform: translate(5%, -530%); opacity: 1;}
-    60% { transform: translate(5%, -150%); opacity: 1; }
-    80% { transform: translate(5%, 100%); opacity: 1;}
-    90% { transform: translate(5%, 400%); opacity: 1;}
-    100% { transform: translate(5%, 700%); opacity: 0; }
-  }
-  
-  .memorable {
-    color: #fff;
-    padding: 5px 10px;
-    background-color: #f4b400;
-    font-size: 70px;
-    opacity: 1;
-    font-family: "Product Sans Regular";
-  }
-  
-  .journey {
-    color: #000;
-    padding: 5px 10px;
-    font-size: 70px;
-    opacity: 1;
-    font-family: "Product Sans Regular";
-  }
-  
-  
+@keyframes thatConstructed {
+  0% {opacity: 1;}
+  34% { transform: translate(0%, -506%); opacity: 1;}
+  40% { transform: translate(0%, -506%); opacity: 1;}
+  50% { transform: translate(0%, -506%); opacity: 1;}
+  60% { transform: translate(170%, -506%); opacity: 1; }
+  80% { transform: translate(250%, -506%); opacity: 1; }
+  100% { transform: translate(700%, -506%); opacity: 0; }
+}
+
+.thatConstructed {
+  color: #000;
+  font-size: 70px;
+  opacity: 1;
+  font-family: "Product Sans Regular";
+}
+
+.memorableJ {
+  display: flex;
+  text-align: left;
+  justify-content:flex-start;
+  position: relative;
+  transform: translate(9%, 700%);
+  animation-name: memJourney;
+  animation-duration: 14.2s;
+  animation-delay: 7.7s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+}
+
+@keyframes memJourney {
+  0% {opacity: 1;}
+  10% {transform: translate(5%, 0%); opacity: 1;}
+  30% { transform: translate(5%, -530%); opacity: 1;}
+  40% { transform: translate(5%, -530%); opacity: 1;}
+  50% { transform: translate(5%, -530%); opacity: 1;}
+  60% { transform: translate(5%, -150%); opacity: 1; }
+  80% { transform: translate(5%, 100%); opacity: 1;}
+  90% { transform: translate(5%, 400%); opacity: 1;}
+  100% { transform: translate(5%, 700%); opacity: 0; }
+}
+
+.memorable {
+  color: #fff;
+  padding: 5px 10px;
+  background-color: #f4b400;
+  font-size: 70px;
+  opacity: 1;
+  font-family: "Product Sans Regular";
+}
+
+.journey {
+  color: #000;
+  padding: 5px 10px;
+  font-size: 70px;
+  opacity: 1;
+  font-family: "Product Sans Regular";
+}
+
