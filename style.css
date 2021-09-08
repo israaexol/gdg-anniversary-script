@@ -52,6 +52,17 @@
   font-size: 140px;
 }
 
+.G1::after {
+  content: "lorious";
+  opacity: 0;
+  animation: glorious 2s 5s forwards;
+}
+
+@keyframes glorious {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+} 
+
 .letterD {
   display: block;
   text-align: left;
@@ -66,16 +77,28 @@
 
 .D {
   font-family: "Product Sans Regular";
-  transform: translate(150%, -323%);
+  transform: translate(30%, -323%);
   color: #db4437;
   font-size: 140px;
 
 }
 
+.D::after {
+  content: "ecade";
+  opacity: 0;
+  animation: decade 2s 5s forwards;
+  margin-left: -29px;
+}
+
+@keyframes decade {
+  0% {opacity: 0; }
+  100% {opacity: 1; }
+} 
+
 @keyframes letterD {
   0% {opacity: 1;}
   100% {
-    transform: translate(-127%, 40%);
+    transform: translate(-25%, 39%);
   }
 }
 
@@ -117,7 +140,7 @@
   color: #f4b400;
   font-size: 140px;
   font-family: "Product Sans Regular";
-  transform: translate(224%, -324%);
+  transform: translate(39%, -324%);
   animation-name: letterG2;
   animation-duration: 2s;
   animation-delay: 3s;
@@ -127,77 +150,20 @@
 
 @keyframes letterG2 {
   0% { opacity: 1; }
-  100% { transform: translate(23%, -98%);}
+  100% { transform: translate(3.8%, -98%);}
 }
 
-.decade {
-  display: block;
-  text-align: left;
-  justify-content:flex-start;
-  position: absolute;
-}
-
-.ecade {
-  font-family: "Product Sans Regular";
-  transform: translate(32%, -239%);
-  color: #db4437;
+.G2::after {
+  content: "oodness";
   opacity: 0;
-  font-size: 140px;
-  animation-name: decade;
-  animation-duration: 2s;
-  animation-delay: 5s;
-  animation-fill-mode: forwards;
-}
-
-@keyframes decade {
-  0% {opacity: 0;}
-  100% {opacity: 1;}
-}
-
-.glorious {
-  display: block;
-  text-align: left;
-  justify-content:flex-start;
-  position: absolute;
-}
-
-.lorious {
-  font-family: "Product Sans Regular";
-  transform: translate(34%, -323%);
-  color: #4285f4;
-  opacity: 0;
-  font-size: 140px;
-  animation-name: decade;
-  animation-duration: 2s;
-  animation-delay: 5s;
-  animation-fill-mode: forwards;
-}
-
-@keyframes glorious {
-  0% {opacity: 0;}
-  100% {opacity: 1;}
-}
-
-.goodness {
-  display: block;
-  text-align: left;
-  justify-content:flex-start;
-  position: absolute;
-}
-
-.oodness {
-  font-family: "Product Sans Regular";
-  transform: translate(26.5%, -98%);
-  color: #f4b400;
-  opacity: 0;
-  font-size: 140px;
-  animation-name: goodness;
-  animation-duration: 2s;
-  animation-delay: 5s;
-  animation-fill-mode: forwards;
+  animation: goodness 2s 5s forwards;
 }
 
 @keyframes goodness {
-  0% {opacity: 0;}
-  100% {opacity: 1;}
+  0% {opacity: 0; }
+  100% {opacity: 1; }
+}
+
+@media screen and (max-width: 1400px) {
+  
 }
