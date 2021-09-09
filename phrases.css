@@ -1,5 +1,11 @@
+body {
+  height:100vh; 
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
 .phrases {
-    transform: translate(25%,12%);
+    transform: translate(30%,12%);
   }
   
 .created {
@@ -32,7 +38,7 @@
   text-align: left;
   justify-content:flex-start;
   animation-name: letterA;
-  animation-duration: 17s;
+  animation-duration: 19s;
   animation-fill-mode: forwards;
   animation-timing-function: ease-in;
   position: relative;
@@ -104,7 +110,7 @@
     transform: translate(0%, -1400%);
     animation-name: dedicatedTo;
     animation-duration: 14.6s;
-    animation-delay: 2s;
+    animation-delay: 3.5s;
     animation-fill-mode: forwards;
     animation-timing-function: ease;
   }
@@ -135,7 +141,7 @@
   transform: translate(5%, 700%);
   animation-name: passionateComm;
   animation-duration: 15.5s;
-  animation-delay: 3s;
+  animation-delay: 4.5s;
   animation-fill-mode: forwards;
   animation-timing-function: ease;
 }
@@ -177,7 +183,7 @@
   transform: translate(0%, -1400%);
   animation-name: thatConstructed;
   animation-duration: 14.1s;
-  animation-delay: 7.8s;
+  animation-delay: 10.2s;
   animation-fill-mode: forwards;
   animation-timing-function: ease;
 }
@@ -207,7 +213,7 @@
   transform: translate(9%, 700%);
   animation-name: memJourney;
   animation-duration: 14.2s;
-  animation-delay: 7.7s;
+  animation-delay: 10.1s;
   animation-fill-mode: forwards;
   animation-timing-function: ease-out;
 }
@@ -241,3 +247,21 @@
   font-family: "Product Sans Regular";
 }
 
+.sidetext {
+  position:absolute;
+  height: 600px;
+  left: 2%;
+  top: 50%;
+  -webkit-transform: translate(50%, -50%);
+  transform: translate(50%, -50%);
+
+}
+
+.GDGlogo {
+  position: absolute;
+  width: 20%;
+  left: 78%;
+  top: 90%;
+  /* -webkit-transform: translate(50%, -50%);
+  transform: translate(50%, -50%) rotate(90deg) */
+}

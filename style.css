@@ -1,3 +1,8 @@
+body {
+  height:100vh; 
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
 .letters {
   position: absolute;
   left: 50%;
@@ -15,12 +20,12 @@
 
 .a {
   color: #0f9d58;
-  font-size: 100px;
+  font-size: 50px;
   opacity: 0;
   font-family: "Product Sans Regular";
   left: 50%;
   right: 50%;
-  transform: translate(60%, 0%);
+  transform: translate(60%, -5%);
   animation-name: letterA;
   animation-duration: 4s;
   animation-delay: 4s;
@@ -38,10 +43,9 @@
     text-align: center;
     justify-content: space-between;
     position: relative;
-    left: 50%;
+    left: 48%;
     right: 50%;
-    transform: translate(-50%, -50%);
-    padding: 7px;
+    transform: translate(-50%, -54%);
 }
 
 .G1 {
@@ -49,7 +53,7 @@
   padding: 0px 20px;
   font-family: "Product Sans Regular";
   color: #4285f4;
-  font-size: 140px;
+  font-size: 70px;
 }
 
 .G1::after {
@@ -79,7 +83,7 @@
   font-family: "Product Sans Regular";
   transform: translate(30%, -323%);
   color: #db4437;
-  font-size: 140px;
+  font-size: 70px;
 
 }
 
@@ -87,7 +91,7 @@
   content: "ecade";
   opacity: 0;
   animation: decade 2s 5s forwards;
-  margin-left: -29px;
+  margin-left: -14px;
 }
 
 @keyframes decade {
@@ -112,9 +116,9 @@
 .of {
   color: #0f9d58;
   opacity: 0;
-  font-size: 100px;
+  font-size: 50px;
   font-family: "Product Sans Regular";
-  padding-top: 30px;
+  margin-top: 23px;
   transform: translate(30%, -178%);
   animation-name: of;
   animation-delay: 4s;
@@ -138,7 +142,7 @@
 
 .G2 {
   color: #f4b400;
-  font-size: 140px;
+  font-size: 70px;
   font-family: "Product Sans Regular";
   transform: translate(39%, -324%);
   animation-name: letterG2;
@@ -150,7 +154,7 @@
 
 @keyframes letterG2 {
   0% { opacity: 1; }
-  100% { transform: translate(3.8%, -98%);}
+  100% { transform: translate(3.8%, -97%);}
 }
 
 .G2::after {
@@ -164,6 +168,21 @@
   100% {opacity: 1; }
 }
 
-@media screen and (max-width: 1400px) {
-  
+.sidetext {
+  position:absolute;
+  height: 600px;
+  left: 2%;
+  top: 50%;
+  -webkit-transform: translate(50%, -50%);
+  transform: translate(50%, -50%);
+
+}
+
+.GDGlogo {
+  position: absolute;
+  width: 20%;
+  left: 78%;
+  top: 90%;
+  /* -webkit-transform: translate(50%, -50%);
+  transform: translate(50%, -50%) rotate(90deg) */
 }

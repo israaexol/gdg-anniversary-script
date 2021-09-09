@@ -1,9 +1,15 @@
+body {
+    height:100vh; 
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
+
 .logo {
     position: absolute;
     left: 50%;
     top: 50%;
     -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -10%);
+    transform: translate(-50%, -50%);
     display: flex;
     justify-content: center;
     animation-name: logo;
@@ -21,6 +27,8 @@
     animation-duration: 2s;
     animation-delay: 3s;
     animation-fill-mode: forwards;
+    width: 40%;
+    height: 40%;
 }
 
 @keyframes logo1 {
@@ -30,6 +38,8 @@
 
 .logo2 {
     padding: 0px 10px;
+    width: 40%;
+    height: 40%;
     animation-name: logo2;
     animation-duration: 2s;
     animation-delay: 3s;
@@ -46,9 +56,10 @@
     left: 50%;
     top: 50%;
     -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -20%);
+    transform: translate(-50%, -50%);
     display: flex;
     opacity: 0;
+    text-align: center;
     justify-content: center;
     animation-name: gdgalgiers;
     animation-duration: 2s;
@@ -57,23 +68,33 @@
     animation-timing-function: ease-out;
 }
 
+.gdgalgiers {
+    font-family: "Product Sans Bold";
+    font-size: 60px;
+}
+
+.gdgalgiers::before {
+    content: "Happy Birthday";
+    display: flex;
+    text-align: center;
+    font-size: 60px;
+    animation-name: gdgalgiers;
+}
+
 @keyframes gdgalgiers {
     0% { opacity: 0; }
     100% { opacity: 1; }
 }
 
-.gdgalgiers {
-    font-family: "Product Sans Bold";
-    font-size: 90px;
-}
+
 
 .hat {
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-100%, -500%);
+    transform: translate(-100%, -600%);
     animation-name: birthdayhat;
-    animation-duration: 4s;
+    animation-duration: 3s;
     animation-delay: 5s;
     animation-timing-function: ease-in;
     animation-fill-mode: forwards;
@@ -81,16 +102,18 @@
 
 @keyframes birthdayhat {
     0% { transform: translate(-100%, -500%); }
-    100% { transform: translate(-100%, -62%); }
+    100% { transform: translate(-80%, -129%); }
 }
 
 .bdayhat {
-    width: 60%;
-    height: 60%;
+    width: 40%;
+    height: 40%;
     transform: rotate(20deg);
 }
 
-.hbday {
+
+
+/* .hbday {
     position: absolute;
     left: 50%;
     top: 50%;
@@ -112,4 +135,4 @@
 .happybday {
     font-size: 80px;
     font-family: "Product Sans Bold";
-}
+} */

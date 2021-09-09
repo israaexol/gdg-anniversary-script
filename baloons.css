@@ -1,3 +1,9 @@
+body {
+  height:100vh; 
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
 .baloons img {
     display: inline-block;
     position: absolute;
@@ -106,4 +112,23 @@
   @keyframes eight {
     0% {top: 2000px;}
     100% {top: -2000px}
+  }
+
+  .sidetext {
+    position:absolute;
+    height: 600px;
+    left: 2%;
+    top: 50%;
+    -webkit-transform: translate(50%, -50%);
+    transform: translate(50%, -50%);
+  
+  }
+  
+  .GDGlogo {
+    position: absolute;
+    width: 20%;
+    left: 78%;
+    top: 90%;
+    /* -webkit-transform: translate(50%, -50%);
+    transform: translate(50%, -50%) rotate(90deg) */
   }
