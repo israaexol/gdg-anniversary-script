@@ -1,0 +1,128 @@
+:root {
+  --typewriterSpeed: 1s;
+  --typewriterCharacters: 24;
+  --bg-color: hsl(49 37% 94%);
+}
+
+body {
+  margin: 0;
+  font-family: "Source Sans Pro", sans-serif;
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+  text-align: center;
+  background: var(--bg-color);
+}
+
+h1 {
+  font-size: clamp(1rem, 3vw + 1rem, 4rem);
+  position: relative;
+  position: relative;
+  width: max-content;
+}
+
+h1::before,
+h1::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+h1::before {
+  background: var(--bg-color);
+  animation: typewriter var(--typewriterSpeed)
+    steps(var(--typewriterCharacters)) 1s forwards;
+}
+
+.toReplace::after {
+  content: "1";
+  animation: replacing 2s linear calc(var(--typewriterSpeed) + 1s)  forwards;
+}
+
+h1::after {
+  width: 0.125em;
+  background: black;
+  animation: typewriter var(--typewriterSpeed)
+      steps(var(--typewriterCharacters)) 1s forwards,
+    blink 750ms steps(var(--typewriterCharacters)) infinite;
+}
+
+.cursor {
+  height: 35px;
+  width: 30px;
+  position: absolute;
+  animation: curmov 1s linear forwards,
+              curclick 0.5s linear 1s forwards;
+  left: 1090px;
+  top: 505px;
+}
+
+.chapter {
+  text-decoration: none; 
+  background-color: rgb(4, 177, 4); 
+  padding: 10px; 
+  border-radius: 5px; 
+  font-size: 24px; 
+  color: white;
+  animation: btnclick 0.5s linear 1s forwards;
+}
+
+@keyframes curmov {
+  10% {
+    left: 1200px;
+    top: 600px;
+  }
+
+  80% {
+    left: 1200px;
+    top: 600px;
+  }
+}
+
+@keyframes curclick {
+  0% {
+    height: 35px;
+    width: 30px;
+  }
+  50% {
+    height: 25px;
+    width: 20px;
+  }
+}
+
+@keyframes btnclick {
+  0% {
+    background-color: rgb(4, 177, 4);
+  }
+  50% {
+    background-color: rgb(0, 97, 0);
+  }
+}
+
+@keyframes typewriter {
+  to {
+    left: 100%;
+  }
+}
+
+@keyframes blink {
+  to {
+    background: transparent;
+  }
+}
+
+@keyframes replacing {
+  0% {
+    content: "1";
+  }
+  50% {
+    color: white;
+  }
+  100% {
+    content: "2";
+  }
+} 
+
