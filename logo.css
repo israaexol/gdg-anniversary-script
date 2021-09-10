@@ -4,8 +4,28 @@ body {
     overflow-x: hidden;
   }
 
+.logogroup {
+    opacity: 1;
+    animation: logogroup 2.5s ease 46s forwards;
+}
+
+@keyframes logogroup {
+  0% { opacity: 1; }
+  10% { opacity: 1; }
+  20% { opacity: 1; }
+  30% { opacity: 1; }
+  40% { opacity: 1; }
+  50% { opacity: 1; }
+  60% { opacity: 1; }
+  70% { opacity: 1; }
+  80% { opacity: 1; }
+  95% { opacity: 0; }
+  100% { opacity: 0; }
+}
+
 .logo {
     position: absolute;
+    opacity: 0;
     left: 50%;
     top: 50%;
     -webkit-transform: translate(-50%, -50%);
@@ -14,6 +34,8 @@ body {
     justify-content: center;
     animation-name: logo;
     animation-duration: 2s;
+    animation-delay: 38s;
+    animation-fill-mode: forwards;
 }
 
 @keyframes logo {
@@ -25,7 +47,7 @@ body {
     padding: 0px 10px;
     animation-name: logo1;
     animation-duration: 2s;
-    animation-delay: 3s;
+    animation-delay: 41s;
     animation-fill-mode: forwards;
     width: 40%;
     height: 40%;
@@ -42,7 +64,7 @@ body {
     height: 40%;
     animation-name: logo2;
     animation-duration: 2s;
-    animation-delay: 3s;
+    animation-delay: 41s;
     animation-fill-mode: forwards;
 }
 
@@ -63,7 +85,7 @@ body {
     justify-content: center;
     animation-name: gdgalgiers;
     animation-duration: 2s;
-    animation-delay: 5s;
+    animation-delay: 43s;
     animation-fill-mode: forwards;
     animation-timing-function: ease-out;
 }
@@ -86,53 +108,25 @@ body {
     100% { opacity: 1; }
 }
 
-
-
 .hat {
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-100%, -600%);
+    transform: translate(-230%, -600%);
     animation-name: birthdayhat;
     animation-duration: 3s;
-    animation-delay: 5s;
+    animation-delay: 43s;
     animation-timing-function: ease-in;
     animation-fill-mode: forwards;
 }
 
 @keyframes birthdayhat {
-    0% { transform: translate(-100%, -500%); }
-    100% { transform: translate(-80%, -129%); }
+    0% { transform: translate(-230%, -500%); }
+    100% { transform: translate(-230%, -120%); }
 }
 
 .bdayhat {
-    width: 40%;
-    height: 40%;
-    transform: rotate(20deg);
+    width: 60%;
+    height: 60%;
+    transform: rotate(-10deg);
 }
-
-
-
-/* .hbday {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    opacity: 0;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -150%);
-    animation-name: hbday;
-    animation-duration: 2s;
-    animation-delay: 10s;
-    animation-fill-mode: forwards;
-    animation-timing-function: ease-in;
-}
-
-@keyframes hbday {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-}
-
-.happybday {
-    font-size: 80px;
-    font-family: "Product Sans Bold";
-} */

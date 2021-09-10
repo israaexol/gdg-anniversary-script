@@ -1,28 +1,47 @@
 :root {
   --typewriterSpeed: 1s;
-  --typewriterCharacters: 24;
-  --bg-color: hsl(49 37% 94%);
+  --typewriterCharacters: 19;
+  --animate-delay: 2s;
 }
 
 body {
-  margin: 0;
-  font-family: "Source Sans Pro", sans-serif;
-  min-height: 100vh;
-  display: grid;
+  font-family: "Product Sans Bold";
+  height: 100vh;
   place-content: center;
   text-align: center;
-  background: var(--bg-color);
+  overflow-y: hidden;
+  overflow-x: hidden;
 }
 
-h1 {
+.bdaydate {
+  animation: bdaydate 2s 4s ease forwards;
+}
+
+@keyframes bdaydate {
+  0% { opacity: 1; }
+  10% { opacity: 1; }
+  20% { opacity: 1; }
+  30% { opacity: 1; }
+  40% { opacity: 1; }
+  50% { opacity: 1; }
+  60% { opacity: 1; }
+  70% { opacity: 1; }
+  80% { opacity: 1; }
+  95% { opacity: 0; }
+  100% { opacity: 0; }
+}
+.date {
+  position: absolute;
+  left: 50%;
+  top: 45%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   font-size: clamp(1rem, 3vw + 1rem, 4rem);
-  position: relative;
-  position: relative;
   width: max-content;
 }
 
-h1::before,
-h1::after {
+.date::before,
+.date::after {
   content: "";
   position: absolute;
   top: 0;
@@ -31,8 +50,8 @@ h1::after {
   left: 0;
 }
 
-h1::before {
-  background: var(--bg-color);
+.date::before {
+  background: white;
   animation: typewriter var(--typewriterSpeed)
     steps(var(--typewriterCharacters)) 1s forwards;
 }
@@ -42,7 +61,7 @@ h1::before {
   animation: replacing 2s linear calc(var(--typewriterSpeed) + 1s)  forwards;
 }
 
-h1::after {
+.date::after {
   width: 0.125em;
   background: black;
   animation: typewriter var(--typewriterSpeed)
@@ -50,24 +69,67 @@ h1::after {
     blink 750ms steps(var(--typewriterCharacters)) infinite;
 }
 
+.moreyears {
+  opacity: 0;
+  position: absolute;
+  animation: moreyears 8s ease 47s forwards;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+@keyframes moreyears {
+  0% { opacity: 0; }
+  10% { opacity: 0; }
+  20% { opacity: 0; }
+  30% { opacity: 0; }
+  40% { opacity: 0; }
+  50% { opacity: 1; }
+  60% { opacity: 1; }
+  70% { opacity: 1; }
+  80% { opacity: 1; }
+  95% { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+.finalpart {
+  opacity: 0;
+  position: absolute;
+  animation: finalpart 3s ease 64s forwards;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+@keyframes finalpart {
+  0% { opacity: 0; }
+  10% { opacity: 1; }
+  100% { opacity: 1; }
+}
+
 .cursor {
   height: 35px;
   width: 30px;
   position: absolute;
-  animation: curmov 1s linear forwards,
-              curclick 0.5s linear 1s forwards;
-  left: 1090px;
-  top: 505px;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  animation: curmov 2s 64s linear forwards,
+              curclick 1s linear 66s forwards;
 }
 
 .chapter {
+  font-family: "Product Sans Bold";
   text-decoration: none; 
-  background-color: rgb(4, 177, 4); 
+  background-color: #f4b400; 
   padding: 10px; 
   border-radius: 5px; 
-  font-size: 24px; 
+  font-size: 40px; 
   color: white;
-  animation: btnclick 0.5s linear 1s forwards;
+  animation: btnclick 1s linear 66s forwards;
 }
 
 @keyframes curmov {
@@ -95,10 +157,10 @@ h1::after {
 
 @keyframes btnclick {
   0% {
-    background-color: rgb(4, 177, 4);
+    background-color: #f4b400;
   }
   50% {
-    background-color: rgb(0, 97, 0);
+    background-color: #c99400;
   }
 }
 

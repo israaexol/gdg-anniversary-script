@@ -28,6 +28,7 @@ body {
   
   .one {
     animation-name: one;
+    animation-delay : 34s;
     animation-duration: 8s;
     animation-fill-mode: forwards;
   }
@@ -39,6 +40,7 @@ body {
   
   .two {
     animation-name: two;
+    animation-delay : 34s;
     animation-duration: 8s;
     animation-fill-mode: forwards;
   }
@@ -49,7 +51,8 @@ body {
   }
   
   .three {
-    animation-name: three;
+    animation-name: three;  
+    animation-delay : 34s;
     animation-duration: 8s;
     animation-fill-mode: forwards;
   }
@@ -61,6 +64,7 @@ body {
   
   .four {
     animation-name: four;
+    animation-delay : 34s;
     animation-duration: 8s;
     animation-fill-mode: forwards;
   }
@@ -72,6 +76,7 @@ body {
 
   .five {
     animation-name: five;
+    animation-delay : 34s;
     animation-duration: 10s;
     animation-fill-mode: forwards;
   }
@@ -83,6 +88,7 @@ body {
 
   .six {
     animation-name: six;
+    animation-delay : 34s;
     animation-duration: 10s;
     animation-fill-mode: forwards;
   }
@@ -94,6 +100,7 @@ body {
 
   .seven {
     animation-name: seven;
+    animation-delay : 34s;
     animation-duration: 8s;
     animation-fill-mode: forwards;
   }
@@ -105,6 +112,7 @@ body {
 
   .eight {
     animation-name: eight;
+    animation-delay : 34s;
     animation-duration: 10s;
     animation-fill-mode: forwards;
   }
@@ -114,21 +122,4 @@ body {
     100% {top: -2000px}
   }
 
-  .sidetext {
-    position:absolute;
-    height: 600px;
-    left: 2%;
-    top: 50%;
-    -webkit-transform: translate(50%, -50%);
-    transform: translate(50%, -50%);
   
-  }
-  
-  .GDGlogo {
-    position: absolute;
-    width: 20%;
-    left: 78%;
-    top: 90%;
-    /* -webkit-transform: translate(50%, -50%);
-    transform: translate(50%, -50%) rotate(90deg) */
-  }
