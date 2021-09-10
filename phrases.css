@@ -5,7 +5,7 @@ body {
 }
 
 .phrases {
-    transform: translate(30%,12%);
+    transform: translate(30%,0%);
     opacity: 0;
     animation: phrases 24s 16s forwards;
   }
