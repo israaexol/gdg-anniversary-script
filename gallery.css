@@ -10,7 +10,7 @@ body{
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     opacity: 0;
-    height: 250px;
+    height: 300px;
     margin: auto;
     position: absolute;
     width: 90%;
@@ -37,7 +37,7 @@ body{
 .slide-track{
     opacity: 1;
     display: flex;
-    width: calc(250px * 18);
+    width: calc(300px * 16);
     animation: scroll 10s linear infinite;
 }
 
@@ -50,7 +50,7 @@ body{
         transform: translateX(0);
     }
     100% {
-        transform: translateX(calc(-250px * 9));
+        transform: translateX(calc(-300px * 8));
     }
 }
 
@@ -63,12 +63,12 @@ body{
     perspective: 100px;
 }
 
-.pic{
+.slide img {
     width: 100%;
     transition: transform 1s;
 }
 
-.pic:hover{
+.slide img:hover{
     transform: translateZ(20px);
 }
 

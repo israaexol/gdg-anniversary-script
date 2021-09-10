@@ -15,6 +15,41 @@ body {
              letters 5.5s 10s ease-out forwards;
 }
 
+.countdown h1{
+  color: #4285F4;
+  font-weight: 100;
+  font-size: 40px;
+  margin: 40px 0px 20px;
+}
+
+.countdown #clockdiv{
+  font-family: sans-serif;
+  color: #fff;
+  display: inline-block;
+  font-weight: 100;
+  text-align: center;
+  font-size: 30px;
+}
+
+.countdown #clockdiv > div{
+  padding: 10px;
+  border-radius: 3px;
+  background: #4285F4;
+  display: inline-block;
+}
+
+.countdown #clockdiv div > span{
+  padding: 15px;
+  border-radius: 3px;
+  background: #0b68ff;
+  display: inline-block;
+}
+
+.smalltext{
+  padding-top: 5px;
+  font-size: 16px;
+}
+
 @keyframes lettersglob {
   0% { opacity: 0; }
   10% { opacity: 0; }
@@ -58,7 +93,7 @@ body {
   left: 50%;
   right: 50%;
   transform: translate(60%, -5%);
-  animation-name: letterA;
+  animation-name: of;
   animation-duration: 5s;
   animation-delay: 10s;
   animation-fill-mode: forwards;
